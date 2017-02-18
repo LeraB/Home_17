@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+ <head >
+	<meta charset="Windows-1251">
+	<title>Home Work</title>
+ 
+	<link rel="stylesheet" href="style.css">
+ </head>
+<body class ="page" >
+<form action="button.php">
+	<h1 >Урок "Формы": теги и их атрибуты.</h1>
+	<h2>Раскажите немного о себе...</h2>
+	<p>Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные.</p>
+	<fieldset class="groupbox">
+		<legend class="groupbox-name">Коротко о себе</legend>
+		<p>Имя:
+		<input type="text" size="30" id="name"></p>
+		<p>Фамилия:
+		<input type="text" size="30" id="second_name"> </p>
+		<p>Пол:
+		<input type="radio" name="sex" id="sex_man" checked>мужской
+		<input type="radio" name="sex" id="sex_woman">женский<Br>
+		</p>
+		<p>Возраст:
+		<input type="value" size="2" id="age">
+		лет
+		</p>
+	</fieldset>
+	<fieldset class="groupbox" >
+		<legend class="groupbox-name">Подробнее о себе</legend>
+		<input type="radio" name="sex_two" id="young_man" checked>Молодой человек<Br>
+		<input type="radio" name="sex_two" id="young_woman">Девушка<Br> 
+		<input type="text" name="data" id="data"> Дата рождения<Br>
+		<input type="text" name="family_position" id="family_position"> Семейноє положение<Br>
+		<input type="text" name="social_status" id="social_status"> Социальній статус<Br>
+		<input type="text" name="residence" id="residence"> Местожительство<Br>
+		<h3>Что вы обычно делаете на выходных:</h3>
+		<input type="checkbox" name="choice" id="sleep">Сплю<Br>
+		<input type="checkbox" name="choice" id="play">Гуляю с друзьями<Br>
+		<input type="checkbox" name="choice" id="fishing">Хожу на рыбалку<Br>
+		<input type="checkbox" name="choice" id="play">Играю в игры<Br>
+		<h3>Рассказать о формах в книге, посвященной HTML:<h3>
+		<p><select size="1" name="sel">
+			<option value="t1" name="sel1" id="sel1">Первая позиция</option>
+			<option value="t2" name="sel2" id="sel2" checked>Вторая позиция</option>
+			<option value="t3" name="sel3" id="sel3">Третья позиция</option>
+		</select></p>
+		<h3>Сколько книг вы прочли за свою жизнь:</h3>
+		<input type="radio" name="count" id="null_ten">0-10<Br>
+		<input type="radio" name="count" id="eleven_twentieth">11-20<Br>
+		<input type="radio" name="count" id="twentieth_fifty">21-50<Br>
+		<input type="radio" name="count" id="fifty_plus">50+<Br>
+		<h3>Ваши коментарии:<h3>
+		<textarea rows="10" cols="45" name="text"></textarea>
+		<p><select size="3" name="position">
+			<option value="t1" id="position1">Первая позиция</option>
+			<option value="t2" id="position2">Вторая позиция</option>
+			<option value="t3" id="position3">Третья позиция</option>
+		</select></p>
+	</fieldset>
+	<fieldset class="groupbox" >
+		<legend class="groupbox-name">И в заключении</legend>
+		<input type="text" size ="25" placeholder="Это поле было введено до вас" name="input_box" id="input_box">
+		<h3>Email:<h3>
+		<input type="text" size="25" id="email">
+		<h3 id="hhh">Хотите подписаться на самую модную рассылку спама?<h3>
+		<h4><i>Выберите категории</i></h4>
+		<input type="checkbox" name= "category"id="equipment" >Оборудование<Br>
+		<input type="checkbox" name= "category" id="meals">Как приготовить обеды<Br>
+		<input type="checkbox" name= "category" id="million">Заработай миллион за два дня!<Br>
+		<h3>На сколько сложная задача:</h3>
+		<p>
+		<input type="radio" name="no" id="not_complicated" checked>Совсем нет<Br>
+		<input type="radio" name="no" id="so_so" >Так себе<Br>
+		<input type="radio" name="no" id="difficult">Еле справились<Br>
+		</p>
+	</fieldset>
+	<p><input type="submit" value="Отправить" id="submit">
+   </p>
+   
+   </form>
+</body>
